@@ -1,0 +1,49 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "StackShit Theme",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1e1e1e",
+    "editor.foreground": "#d4d4d4"
+  },
+  "tokenColors": [
+    {
+      "scope": "keyword.control.stack.stackshit",
+      "settings": {
+        "foreground": "#1be92f",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "keyword.control.io.stackshit",
+      "settings": {
+        "foreground": "#25e3f0"
+      }
+    },
+    {
+      "scope": "keyword.operator.arithmetic.stackshit",
+      "settings": {
+        "foreground": "#f2ff65"
+      }
+    },
+    {
+      "scope": "keyword.control.flow.stackshit",
+      "settings": {
+        "foreground": "#bd93f9"
+      }
+    },
+    {
+      "scope": "constant.numeric.stackshit",
+      "settings": {
+        "foreground": "#ba24df"
+      }
+    },
+    {
+      "scope": "comment.line.semicolon.stackshit",
+      "settings": {
+        "foreground": "#6a84d0",
+        "fontStyle": "italic"
+      }
+    }
+  ]
+}

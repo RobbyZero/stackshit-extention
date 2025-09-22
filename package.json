@@ -1,0 +1,57 @@
+{
+  "name": "stackshit",
+  "displayName": "StackShit",
+  "publisher": "RobbyZero",
+  "description": "A tiny cruel stack based esolang!",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "stackshit.runFile",
+        "title": "Run StackShit Program"
+      }
+    ],
+    "languages": [
+      {
+        "id": "stackshit",
+        "aliases": ["StackShit", "stackshit"],
+        "extensions": [".stk"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "stackshit",
+        "scopeName": "source.stackshit",
+        "path": "./syntaxes/stackshit.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "StackShit Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stackshit-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.104.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.34.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}

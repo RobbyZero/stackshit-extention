@@ -1,0 +1,61 @@
+{
+  "scopeName": "source.stackshit",
+  "patterns": [
+    { "include": "#stackOps" },
+    { "include": "#printOps" },
+    { "include": "#mathOps" },
+    { "include": "#flowOps" },
+    { "include": "#numbers" },
+    { "include": "#comments" }
+  ],
+  "repository": {
+    "stackOps": {
+      "patterns": [
+        {
+          "name": "keyword.control.stack.stackshit",
+          "match": "\\b(i|d|s)\\b"
+        }
+      ]
+    },
+    "printOps": {
+      "patterns": [
+        {
+          "name": "keyword.control.io.stackshit",
+          "match": "\\b(p|n)\\b"
+        }
+      ]
+    },
+    "mathOps": {
+      "patterns": [
+        {
+          "name": "keyword.operator.arithmetic.stackshit",
+          "match": "[\\+\\-\\*/%]"
+        }
+      ]
+    },
+    "flowOps": {
+      "patterns": [
+        {
+          "name": "keyword.control.flow.stackshit",
+          "match": "[\\[\\]]"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.stackshit",
+          "match": "\\d+"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.semicolon.stackshit",
+          "match": ";.*$"
+        }
+      ]
+    }
+  }
+}
