@@ -10,6 +10,10 @@
   "categories": [
     "Other"
   ],
+  "icon": "images/sslogo.png",
+  "activationEvents": [
+  "onLanguage:stackshit"
+],
   "main": "./extension.js",
   "contributes": {
     "commands": [
